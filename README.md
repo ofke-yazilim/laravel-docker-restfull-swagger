@@ -4,7 +4,7 @@
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
- - Local test için : http://localhost/api/documentation <br>
+ - Local test için : http://localhost/api/documentation <br><br>
 **http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servisleri kullanılarak token alırken aşağıdaki bilgiler kullanılmalıdır.**
  <pre>
  Email : info@okesmez.com
@@ -35,6 +35,15 @@
 https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/local-restfull.postman_collection.json
 - okesmez.com üzerinde çalışan projeyi postman üzerinde test etmek için ise aşağıdaki dosya import edilmelidir.<br>
 https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/okesmez.com-restfull.postman_collection.json
+
+## Dosyalar
+
+ 1. Route : https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/framework/routes/api.php
+ 2. Controller : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Http/Controllers
+ 3. Model : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Models
+ 4. Seed : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/seeders
+ 5. Migrations : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/migrations
+ 6. Discount Helper : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Helpers
 
 > Siparişlere ait indirim kurallarını takip eden Discount sınıfına yeni bir fonksiyon oluşturularak yeni bir indirim kuralı koyulabilir.
 
