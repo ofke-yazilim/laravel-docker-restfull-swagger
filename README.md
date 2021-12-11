@@ -11,19 +11,16 @@
  - İmage oluşturulduktan sonra **Docker-compose.yaml** dosyası açılarak dosya içerisine oluşturulan versiyon yazılır.<br>
  - Aşağıdaki command çalıştırılarak. Docker ortamda proje ayağı kaldırılmış olur.<br>
   `docker-compose up -d --build`
-> Yukarıdaki işlemlerden sonra 1 kaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
+> Yukarıdaki işlemlerden sonra birkaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
-####İşlem local bilgisayarda yapıldıysa projeye ait linkler aşağıdadır.####
-**Servisler  ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)<br>
+###İşlem local bilgisayarda yapıldıysa projeye ait linkler aşağıdadır.###
+**Servisler ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)<br>
 **Phpmyadmin:**   http://localhost:8080/ (**username:** root **password:** Z5AajEapuLZuNuv)  
 
  - Projenin bulunduğu container içerisine girebilmek için aşağıdaki command çalıştırılmalıdır. <br>
    `docker-compose exec web sh` 
    
- - Yukarıdaki commad ile container terminaline girilmiş olur. Proje
-   kodlarının     bulunduğu yere ise`cd data/www` dosya yoluna gidilerek ulaşılır.
-
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+ - Yukarıdaki commad ile container terminaline girilmiş olur. Proje kodlarının  bulunduğu yere ise`cd data/www` dosya yoluna gidilerek ulaşılır.
 
 ## Postman
 
