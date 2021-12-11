@@ -4,7 +4,7 @@
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
- - Local test için : http://localhost/api/documentation 
+ - Local test için : http://localhost/api/documentation <br>
 **http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servisleri kullanılarak token alırken aşağıdaki bilgiler kullanılmalıdır.**
  <pre>
  Email : info@okesmez.com
