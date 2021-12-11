@@ -14,7 +14,7 @@
   `docker-compose up -d --build`
 > Yukarıdaki işlemlerden sonra birkaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
-###İşlem local bilgisayarda yapıldıysa projeye ait linkler aşağıdadır.###
+###  İşlem local bilgisayarda yapılıyorsa projeye ait linkler aşağıdadır.
 **Servisler ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)<br>
 **Phpmyadmin:**   http://localhost:8080/ (**username:** root **password:** Z5AajEapuLZuNuv)  
 
