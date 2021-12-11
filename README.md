@@ -3,6 +3,7 @@
  - Docker için **dockerfile** ve **docker-compose.yaml** dosyaları oluşturulmuştur.
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
+ - Canlı test için : http://restfull.okesmez.com/api/documentation 
 # Docker Kurulumu
 İlk olarak Framework dizininde bulunan **.env.example** dosyasının adı **.env** olarak değiştirilmelidir.
 ****
