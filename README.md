@@ -6,19 +6,18 @@
 # Docker Kurulumu
 İlk olarak Framework dizininde bulunan **.env.example** dosyasının adı **.env** olarak değiştirilmelidir.
 ****
- - Docker image oluşturmak için Dockerfile'ın bulunduğu dizinde aşağıdaki command çalıştırılmalıdır.
+ - Docker image oluşturmak için Dockerfile'ın bulunduğu dizinde aşağıdaki command çalıştırılmalıdır.<br>
 `docker build -t image:1.0.1`
- - İmage oluşturulduktan sonra **Docker-compose.yaml** dosyası açılarak dosya içerisine oluşturulan versiyon yazılır.
- - Aşağıdaki command çalıştırılarak. Docker ortamda proje ayağı kaldırılmış olur.
+ - İmage oluşturulduktan sonra **Docker-compose.yaml** dosyası açılarak dosya içerisine oluşturulan versiyon yazılır.<br>
+ - Aşağıdaki command çalıştırılarak. Docker ortamda proje ayağı kaldırılmış olur.<br>
   `docker-compose up -d --build`
 > Yukarıdaki işlemlerden sonra 1 kaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
-İşlem local bilgisayarda yapıldıysa projeye ait linkler aşağıdadır.
-**Servisler  ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)
+İşlem local bilgisayarda yapıldıysa projeye ait linkler aşağıdadır.<br>
+**Servisler  ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)<br>
 **Phpmyadmin:**   http://localhost:8080/ (**username:** root **password:** Z5AajEapuLZuNuv)  
 
- - Projenin bulunduğu container içerisine girebilmek için aşağıdaki
-   command çalıştırılmalıdır. 
+ - Projenin bulunduğu container içerisine girebilmek için aşağıdaki command çalıştırılmalıdır. <br>
    `docker-compose exec web sh` 
    
  - Yukarıdaki commad ile container terminaline girilmiş olur. Proje
