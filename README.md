@@ -4,6 +4,8 @@
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
 # Docker Kurulumu
+İlk olarak Framework dizininde bulunan **.env.example** dosyasının adı **.env** olarak değiştirilmelidir.
+****
  - Docker image oluşturmak için Dockerfile'ın bulunduğu dizinde aşağıdaki command çalıştırılmalıdır.
 `docker build -t image:1.0.1`
  - İmage oluşturulduktan sonra **Docker-compose.yaml** dosyası açılarak dosya içerisine oluşturulan versiyon yazılır.
@@ -24,5 +26,11 @@
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
-## Dosyalar
+## Postman
+
+ - Localhost üzerinde servisleri çalıştırmak için postman üzerine import edilecek olan dosya aşağıdadır.<br>
+https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/local-restfull.postman_collection.json
+- okesmez.com üzerinde çalışan projeyi postman üzerinde test etmek için ise aşağıdaki dosya import edilmelidir.<br>
+https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/okesmez.com-restfull.postman_collection.json
+
 
