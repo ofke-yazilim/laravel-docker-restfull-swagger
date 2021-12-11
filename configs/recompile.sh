@@ -9,7 +9,7 @@ echo '127.0.0.1  test122.com' >> /etc/hosts
 /usr/bin/php /data/www/artisan view:clear
 /usr/bin/php /data/www/artisan route:clear
 echo 'Lütfen database hazırlanırken bekleyiniz.'
-echo '1 Dakika bekleyecdeksiniz.'
+echo '1 Dakika kadar bekleyeceksiniz.'
 sleep 60
 /usr/bin/php /data/www/artisan migrate
 #seeds
