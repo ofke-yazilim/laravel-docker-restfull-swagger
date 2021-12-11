@@ -30,4 +30,6 @@ https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/local-restful
 - okesmez.com üzerinde çalışan projeyi postman üzerinde test etmek için ise aşağıdaki dosya import edilmelidir.<br>
 https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/okesmez.com-restfull.postman_collection.json
 
+> Siparişlere ait indirim kurallarını takip eden Discount sınıfına yeni bir fonksiyon oluşturularak yeni bir indirim kuralı koyulabilir.
+
 
