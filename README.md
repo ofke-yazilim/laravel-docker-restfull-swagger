@@ -4,6 +4,12 @@
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
+ - Local test için : http://localhost/api/documentation 
+**http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servisleri kullanılarak token alırken aşağıdaki bilgiler kullanılmalıdır.**
+ <pre>
+ Email : info@okesmez.com
+ Password : 123456
+ </pre>
 # Docker Kurulumu
 İlk olarak Framework dizininde bulunan **.env.example** dosyasının adı **.env** olarak değiştirilmelidir.
 ****
@@ -15,7 +21,7 @@
 > Yukarıdaki işlemlerden sonra birkaç dakika beklenmelidir. Mysql veritabanın ve Projenin ayağı kalkması biraz zaman alıyor.
 
 ###  İşlem local bilgisayarda yapılıyorsa projeye ait linkler aşağıdadır.
-**Servisler ve Kullanımları :** https://localhost/api/documentation (Servsler bu adresten test edilebilir.)<br>
+**Servisler ve Kullanımları :** https://localhost/api/documentation (Servisler bu adresten test edilebilir.)<br>
 **Phpmyadmin:**   http://localhost:8080/ (**username:** root **password:** Z5AajEapuLZuNuv)  
 
  - Projenin bulunduğu container içerisine girebilmek için aşağıdaki command çalıştırılmalıdır. <br>

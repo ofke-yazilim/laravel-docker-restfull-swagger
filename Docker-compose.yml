@@ -64,7 +64,7 @@ services:
         ipv4_address: 173.17.0.5
 
   web:
-    image: image:1.0.1.RC4
+    image: image:1.0.1
     ports:
       - 80:80
       - 443:443
