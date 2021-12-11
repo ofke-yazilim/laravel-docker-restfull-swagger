@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "email": "test1@test.com",
+        "password" : "asdfgh",
+        "role": 1,
+        "name": "Türker Jöntürk",
+        "since": "2014-06-28",
+        "revenue": "492.12"
+    },
+    {
+        "id": 2,
+        "email": "test2@test.com",
+        "password" : "asdfgh",
+        "role": 1,
+        "name": "Kaptan Devopuz",
+        "since": "2015-01-15",
+        "revenue": "1505.95"
+    },
+    {
+        "id": 3,
+        "email": "test3@test.com",
+        "password" : "asdfgh",
+        "role": 1,
+        "name": "İsa Sonuyumaz",
+        "since": "2016-02-11",
+        "revenue": "0.00"
+    }
+]

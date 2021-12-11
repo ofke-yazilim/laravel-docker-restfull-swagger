@@ -1,0 +1,76 @@
+version: '3'
+networks:
+  playstore:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 173.17.0.0/16
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Z5AajEapuLZuNuv
+      MYSQL_DATABASE: okesmezc_restfull
+      MYSQL_USER: okesmezc_restfull
+      MYSQL_PASSWORD: Z5AajEapuLZuNuv
+    ports:
+      - "3306:3306"
+    networks:
+      playstore:
+        ipv4_address: 173.17.0.2
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: Z5AajEapuLZuNuv
+    networks:
+      playstore:
+        ipv4_address: 173.17.0.3
+
+  db:
+    container_name: postgres_container
+    image: postgres:12.0-alpine
+    environment:
+      POSTGRES_PASSWORD: q1w2e3
+      POSTGRES_DB: laravel
+    ports:
+      - "5433:5433"
+    networks:
+      playstore:
+        ipv4_address: 173.17.0.4
+
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "info@okesmez.com"
+      PGADMIN_DEFAULT_PASSWORD: "q1w2e3"
+    restart: unless-stopped
+    ports:
+      - "16543:80"
+    depends_on:
+      - db
+    networks:
+      playstore:
+        ipv4_address: 173.17.0.5
+
+  web:
+    image: image:1.0.1.RC4
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./framework:/data/www/
+      #- ./configs/recompile.sh:/data/recompile.sh
+    networks:
+      playstore:
+        ipv4_address: 173.17.0.6
