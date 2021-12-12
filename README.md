@@ -6,8 +6,9 @@
  - Proje içerisinde kuyruk süreçlerini takip edecek supervisior tanımlamaları yapılmıştır. [Konfigirasyonu görmek için tıkla.](https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/configs/supervisor/laravel-worker.conf "Konfigirasyonu görmek için tıkla.")
  - Proje içerisinde cron servisi tanımlanmıştır. Laravel Task Schedule servisi çalışmaktadır. [Laravel Task Schedule](https://laravel.com/docs/8.x/scheduling)
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
- - Local test için : http://localhost/api/documentation <br><br>
-**http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servisleri kullanılarak token alırken aşağıdaki bilgiler kullanılmalıdır.**
+ - Local test için : http://localhost/api/documentation <br>
+
+**http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servislerini kullanmak için gerkli olan token aşağıdaki bilgiler kullanılarak alınır.**
  <pre>
  Email : info@okesmez.com
  Password : 123456
