@@ -8,7 +8,7 @@
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
  - Local test için : http://localhost/api/documentation <br>
 
-**http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servislerini kullanmak için gerkli olan token aşağıdaki bilgiler kullanılarak alınır.**
+**http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servislerini kullanmak için gerekli olan token aşağıdaki bilgiler kullanılarak alınır.**
  <pre>
  Email : info@okesmez.com
  Password : 123456
