@@ -3,6 +3,8 @@
  - Docker için **dockerfile** ve **docker-compose.yaml** dosyaları oluşturulmuştur.
  - İçerisinde Restfull servisleri barındırmaktadır.
  - Kodlanan servislerin dökümantasyonu https://swagger.io/ altyapısına entegre edilmiştir.
+ - Proje içerisinde kuyruk süreçlerini takip edecek supervisior tanımlamaları yapılmıştır. [Konfigirasyonu görmek için tıkla.](https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/configs/supervisor/laravel-worker.conf "Konfigirasyonu görmek için tıkla.")
+ - Proje içerisinde cron servisi tanımlanmıştır. Laravel Task Schedule servisi çalışmaktadır. [Laravel Task Schedule](https://laravel.com/docs/8.x/scheduling)
  - Canlı test için : http://restfull.okesmez.com/api/documentation 
  - Local test için : http://localhost/api/documentation <br><br>
 **http://restfull.okesmez.com/api/auth/login ve http://localhost/api/auth/login servisleri kullanılarak token alırken aşağıdaki bilgiler kullanılmalıdır.**
@@ -44,7 +46,8 @@ https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/okesmez.com-r
  4. Seed : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/seeders
  5. Migrations : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/database/migrations
  6. Discount Helper : https://github.com/ofke-yazilim/laravel-restfull-swagger/tree/main/framework/app/Helpers
+ 7. Koşturulan artisan ve terminal kodları : https://github.com/ofke-yazilim/laravel-restfull-swagger/blob/main/configs/recompile.sh
 
-> Siparişlere ait indirim kurallarını takip eden Discount sınıfına yeni bir fonksiyon oluşturularak yeni bir indirim kuralı koyulabilir.
+> Siparişlere ait indirim kurallarını takip eden Discount sınıfına yeni bir fonksiyon oluşturularak yeni bir indirim kuralı koyulabilir. Discount class'ı ServiceProvider üzerinde singleton olarak tanımlanmıştır.
 
 

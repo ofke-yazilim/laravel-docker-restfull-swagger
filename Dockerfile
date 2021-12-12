@@ -87,8 +87,8 @@ RUN yum install -y cronie && yum clean all
 RUN rm -rf /etc/localtime
 RUN ln -s /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
 
-# Crontab test tanımlanıyor
-#RUN crontab -l | { cat; echo "* * * * * /usr/bin/php /data/www/artisan schedule:run >> /dev/null 2>&1"; } | crontab -
+# Crontab schedule tanımlanıyor
+RUN crontab -l | { cat; echo "* * * * * /usr/bin/php /data/www/artisan schedule:run >> /dev/null 2>&1"; } | crontab -
 
 # Supervisior tanımlamaları
 ENV SUPERVISOR_VERSION=4.0.2
@@ -125,8 +125,8 @@ COPY configs/supervisor/laravel-worker.conf /etc/supervisor.d/laravel-worker.con
 # Supervisior son
 
 #Postgresql indiriliyor
-RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-RUN yum install -y postgresql13-server
+#RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+#RUN yum install -y postgresql13-server
 
 # imageMagick
 #RUN yes | yum install php-devel
@@ -136,6 +136,13 @@ RUN yum install -y postgresql13-server
 #RUN yes | yum install libwebp-tools
 ##RUN pecl install imagick
 #RUN echo "extension=imagick.so" > /etc/php.d/imagick.ini
+
+#RUN yes | yum install php71 php71-php-common php71-php-fpm
+#RUN yes | yum install php71-php-mysql php71-php-pecl-memcache php71-php-pecl-memcached php71-php-gd php71-php-mbstring php71-php-mcrypt php71-php-xml php71-php-pecl-apc php71-php-cli php71-php-pear php71-php-pdo php71-php-bcmath php71-php-intl php71-php-json php71-php-ldap php71-php-opcache php71-php-pecl-mongodb php71-php-pear php71-php-pecl-apcu php71-php-pecl-imagick php71-php-pecl-redis php71-php-pecl-xdebug php71-php-pgsql php71-php-mysqlnd php71-php-soap php71-php-tidy php71-php-pecl-zip php71-php-xmlrpc
+#COPY configs/php-fpm/71www.conf /etc/opt/remi/php71/php-fpm.d/www.conf
+#COPY configs/php-fpm/71php.ini /etc/opt/remi/php71/php.ini
+#RUN chown nginx:nginx /var/opt/remi/php71/run/php-fpm
+#RUN chown nginx:nginx /var/opt/remi/php71/lib/php/session
 
 # nginx setting
 RUN mkdir -p /etc/nginx/conf.d
