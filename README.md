@@ -12,10 +12,6 @@
  Email : info@okesmez.com
  Password : 123456
  </pre>
-# Proje Hakkında Videolu Anlatım
->(Videoları izleyebilmek için indirmeniz gerekiyor.)
- - [Projenin Docker ile ayağı kaldırılması konulu video için tıklayınız.](https://github.com/ofke-yazilim/laravel-restfull-swagger/videos/docker_ile_calistir.mp4)
- - [Projeinin Postman ve Swagger üzerinde kullanılması hakkındaki video için tıklayınız.](https://github.com/ofke-yazilim/laravel-restfull-swagger/videos/postman_swagger_kullanim.mp4)
 # Docker Kurulumu
 İlk olarak Framework dizininde bulunan **.env.example** dosyasının adı **.env** olarak değiştirilmelidir.
 ****
