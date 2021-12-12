@@ -21,6 +21,6 @@ Route::middleware('auth:sanctum')->group(function () {
 
 
 Route::post('auth/login/',  [\App\Http\Controllers\AuthController::class, 'login']);
-Route::any('product/update/{id}',  [\App\Http\Controllers\ProductController::class, 'update']);
+Route::put('product/update/{id}',  [\App\Http\Controllers\ProductController::class, 'update']);
 Route::any('order/discounts/{id}',  [\App\Http\Controllers\DiscountController::class, 'index']);
 Route::any('login',  [\App\Http\Controllers\AuthController::class, 'rlogin'])->name('login');;
