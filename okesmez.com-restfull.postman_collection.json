@@ -218,7 +218,7 @@
 		{
 			"name": "update-product",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",
@@ -228,7 +228,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"stock\":100\r\n}",
+					"raw": "{\r\n    \"stock\":210\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

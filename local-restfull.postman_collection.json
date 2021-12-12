@@ -47,7 +47,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer 1|OqLbWq3Fm32y8yQbifkSaqWZbmns9IU4l1JkD4ZR",
+						"value": "Bearer 1|IKj6ncxjO0bh5TZDkRgVux0yhx5Yi0OtgdE7jKgh",
 						"type": "text"
 					}
 				],
@@ -74,7 +74,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "Bearer 1|A810q3SpYHiX9f0SwUKo5jMKfWKUwwf1PLObN7HP"
+						"value": "Bearer 1|IKj6ncxjO0bh5TZDkRgVux0yhx5Yi0OtgdE7jKgh"
 					}
 				],
 				"url": {
@@ -100,7 +100,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "Bearer 1|A810q3SpYHiX9f0SwUKo5jMKfWKUwwf1PLObN7HP"
+						"value": "Bearer 1|IKj6ncxjO0bh5TZDkRgVux0yhx5Yi0OtgdE7jKgh"
 					}
 				],
 				"body": {
@@ -137,7 +137,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "Bearer 1|A810q3SpYHiX9f0SwUKo5jMKfWKUwwf1PLObN7HP"
+						"value": "Bearer 1|IKj6ncxjO0bh5TZDkRgVux0yhx5Yi0OtgdE7jKgh"
 					}
 				],
 				"body": {
@@ -150,7 +150,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost/api/order/7",
+					"raw": "https://localhost/api/order/2",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -158,7 +158,7 @@
 					"path": [
 						"api",
 						"order",
-						"7"
+						"2"
 					]
 				}
 			},
@@ -188,7 +188,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost/api/order/discounts/7",
+					"raw": "https://localhost/api/order/discounts/2",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -197,7 +197,7 @@
 						"api",
 						"order",
 						"discounts",
-						"7"
+						"2"
 					]
 				}
 			},
@@ -206,7 +206,7 @@
 		{
 			"name": "update-product-localhost",
 			"request": {
-				"method": "POST",
+				"method": "PUT",
 				"header": [
 					{
 						"key": "Authorization",

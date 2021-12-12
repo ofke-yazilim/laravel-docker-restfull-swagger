@@ -273,7 +273,7 @@
             }
         },
         "/api/product/update/{id}": {
-            "post": {
+            "put": {
                 "tags": [
                     "PRODUCT"
                 ],
