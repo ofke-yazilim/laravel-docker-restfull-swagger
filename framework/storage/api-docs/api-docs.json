@@ -19,7 +19,8 @@
                         "required": true,
                         "schema": {
                             "type": "string"
-                        }
+                        },
+                        "example": "info@okesmez.com"
                     },
                     {
                         "name": "password",
@@ -27,7 +28,8 @@
                         "required": true,
                         "schema": {
                             "type": "string"
-                        }
+                        },
+                        "example": "123456"
                     }
                 ],
                 "responses": {

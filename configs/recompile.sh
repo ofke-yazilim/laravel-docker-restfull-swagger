@@ -15,6 +15,7 @@ sleep 60
 #seeds
 /usr/bin/php /data/www/artisan db:seed --class=UserSeeder
 /usr/bin/php /data/www/artisan db:seed --class=ProductSeeder
+#php data/www/artisan l5-swagger:generate
 # Crontab çalıştırılıyor
 crond
 

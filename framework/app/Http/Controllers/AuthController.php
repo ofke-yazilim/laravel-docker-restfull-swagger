@@ -18,6 +18,7 @@ class AuthController extends Controller
      *      @OA\Parameter(
      *          name="email",
      *          in="query",
+     *          example="info@okesmez.com",
      *          required=true,
      *          @OA\Schema(
      *              type="string"
@@ -27,6 +28,7 @@ class AuthController extends Controller
      *          name="password",
      *          in="query",
      *          required=true,
+     *          example="123456",
      *          @OA\Schema(
      *              type="string"
      *          )
