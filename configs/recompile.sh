@@ -19,3 +19,7 @@ sleep 60
 # Crontab çalıştırılıyor
 crond
 
+#php71 çalıştırılıyor.
+/opt/remi/php71/root/usr/sbin/php-fpm #--nodaemonize
+
+
